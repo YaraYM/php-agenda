@@ -6,24 +6,22 @@
   // limpa a mensagem
   if(isset($_SESSION['msg'])) {
     $printMsg = $_SESSION['msg'];
-    $_SESSION['msg'] = "";
+    $_SESSION['msg'] = '';
   }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agenda de Contatos</title>
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <!-- CSS -->
-  <link rel="stylesheet" href="<?= $BASE_URL ?>css/styles.css" />
+  <link rel="stylesheet" href="<?= $BASE_URL ?>css/styles.css">
 </head>
 <body>
   <header>
@@ -33,8 +31,8 @@
       </a>
       <div>
         <div class="navbar-nav">
-          <a href="<?= $BASE_URL ?>index.php" class="nav-link active" id="home-link">Agenda</a>
-          <a href="<?= $BASE_URL ?>create.php" class="nav-link active" id="home-link">Adicionar Contato</a>
+          <a class="nav-link active" id="home-link" href="<?= $BASE_URL ?>index.php">Agenda</a>
+          <a class="nav-link active" href="<?= $BASE_URL ?>create.php">Adicionar Contato</a>
         </div>
       </div>
     </nav>
