@@ -40,6 +40,10 @@
   color: #007BFF;
 }
 
+.delete-form {
+  display: inline-block;
+}
+
 .delete-btn {
   background-color: transparent;
   border: none;
@@ -66,7 +70,7 @@
 }
 
 /* show / contato individual */
-#view-contact {
+#view-contact-container {
   max-width: 500px;
   margin: 0 auto;
 }
@@ -90,4 +94,11 @@
 
 #back-link:hover {
   text-decoration: none;
+}
+
+/* crate */
+#create-form,
+#edit-form {
+  max-width: 500px;
+  margin: 0 auto;
 }
